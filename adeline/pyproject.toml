@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "over-mocking-detector"
+version = "0.1.0"
+description = "Conservative static inspection of Python test mocks"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+mock-detector = "mock_detector.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["mock_detector*"]
